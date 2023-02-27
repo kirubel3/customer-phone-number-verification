@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "404" ,
+  "errorMessage": " Resources not found",
+  " statusCode": "404 - not Found"
+}

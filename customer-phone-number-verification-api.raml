@@ -1,0 +1,58 @@
+#%RAML 1.0
+title: customer-phone-number-verification-api
+protocols:
+  - HTTP
+traits:
+    errorResponses: !include traits/errorTrait.raml
+
+securitySchemes:
+  securityCustomScheme: !include security-scheme/CustomeSecurityScheme.raml
+securedBy:
+    -  securityCustomScheme
+                                 
+                  
+
+/PhoneNumber-verification:
+  get:
+    is:
+      - errorResponses
+    description: verify a Phone Number
+    queryParameters:
+      phoneNumber:
+        type: string
+        required: true
+        description: 
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include customer/phoneNumber.json
+            type: object 
+            properties:
+                
+              valid:
+                type: boolean
+                description: indicates if the phone number is valid or not
+              dialling_code:
+                type: string
+                description: country code of the phone number
+              
+              country_name:
+                type: string
+                description: nationality of our customer
+      400:
+        body:
+          application/json:
+            example: !include errorResp/400.json
+      401:
+       body:
+         application/json:
+           example: !include errorResp/401.json        
+      404:
+       body:
+         application/json:
+          example: !include errorResp/404.json        
+      500:
+       body:
+        application/json:
+          example: !include errorResp/500.json

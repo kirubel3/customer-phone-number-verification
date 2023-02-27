@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "500",
+  "errorMessage": " Internal server error ",
+  " statusCode": "500 - internal server error"
+}

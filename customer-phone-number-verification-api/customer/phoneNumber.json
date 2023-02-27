@@ -1,0 +1,28 @@
+{
+  "AD": {
+    "country_name": "Andorra",
+    "dialling_code": "+376"
+  
+  },
+  "AE": {
+    "country_name": "United Arab Emirates",
+    "dialling_code": "+971"
+     
+  },
+  "AF": {
+    "country_name": "Afghanistan",
+    "dialling_code": "+93"
+   
+  },
+  "AG": {
+    "country_name": "Antigua",
+    "dialling_code": "+12"
+     
+  },
+  
+  "AI": {
+    "country_name": "Anguilla",
+    "dialling_code": "+1"
+   
+  }
+}

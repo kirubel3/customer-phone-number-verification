@@ -1,0 +1,17 @@
+#%RAML 1.0 SecurityScheme
+type: x-authorize
+description: this will make sure that the person is authorize
+describedBy:
+  headers:
+    Authorization: 
+      type: string
+    required:
+    client_id:
+      type: string
+    client_secret:
+      type: string 
+  
+  responses:
+    401:
+      description: 401- UnAuthorized access
+        

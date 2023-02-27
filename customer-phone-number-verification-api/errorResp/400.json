@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "400",
+  "errorMessage": " Message is incorrecr. bad request",
+  " statusCode": "400 - bad request"
+}
